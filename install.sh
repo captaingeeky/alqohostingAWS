@@ -91,7 +91,7 @@ masternodeprivkey='"${MASTERNODEPRIVKEY}"'
 
 
 [ -d tmp ] && rm -r tmp
-git clone https://github.com/ALQOCRYPTO/HostingWebinterface.git tmp && mv -v tmp/* /var/www/html/ && mv tmp/.git /var/www/html/.git && rm -r tmp
+git clone https://github.com/captaingeeky/alqopublicAWS.git tmp && mv -v tmp/* /var/www/html/ && mv tmp/.git /var/www/html/.git && rm -r tmp
 
 
 output "Configurate Webservice Packages"
