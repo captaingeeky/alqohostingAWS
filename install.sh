@@ -1,25 +1,25 @@
 #!/bin/bash
 
 #SERVERNAME-Example: Loretta
-SERVERNAME=
+SERVERNAME=Crypto4Lyfe
 
 #SERVERNAMELOWER Example: loretta
-SERVERNAMELOWER=
+SERVERNAMELOWER=crypto4lyfe
 
 #HOSTNAME Example: loretta.hosting.alqo.org
-HOSTNAME=
+HOSTNAME=crypto4lyfe.com
 
 #SERVERIP Example: 12.34.56.78
-SERVERIP=
+SERVERIP=dig +short myip.opendns.com @resolver1.opendns.com
 
 #SET A INITIAL-CODE HERE
 INITIAL="test"
 
 #SET A RPC-USER HERE
-RPCUSER=""
+RPCUSER="testing"
 
 #SET A RPC-PASS HERE
-RPCPASS=""
+RPCPASS="tester"
 
 STAKING=0
 MASTERNODE=0
@@ -106,7 +106,7 @@ output "Restarting Webservice"
 systemctl restart apache2
 
 output "Starting ALQO Daemon"
-/var/ALQO/alqod -datadir=/var/ALQO/data
+/var/ALQO/alqod -datadir=/var/ALQO/data -listen=0
 
 
 output "Setting up Cronjob & Permissions"
