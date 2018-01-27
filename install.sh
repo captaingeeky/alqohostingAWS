@@ -10,7 +10,7 @@ SERVERNAMELOWER=crypto4lyfe
 HOSTNAME=crypto4lyfe.com
 
 #SERVERIP Example: 12.34.56.78
-SERVERIP=dig +short myip.opendns.com @resolver1.opendns.com
+SERVERIP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
 #SET A INITIAL-CODE HERE
 INITIAL="test"
