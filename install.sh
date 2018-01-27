@@ -142,4 +142,3 @@ echo "@reboot /var/ALQO/services/monitor.sh
 */30 * * * * git --git-dir=/var/www/html/.git --work-tree=/var/www/html pull" | crontab -
 
 cat /dev/null > ~/.bash_history
-
